@@ -5,7 +5,6 @@ import {
   ManifestoBlock,
   CTASection,
 } from '@/components/sections/Shared';
-import { Expansion } from '@/components/visuals/Expansion';
 import { pageMetadata } from '@/lib/metadata';
 export const metadata = pageMetadata(
   'About | BLUMEA',
@@ -47,48 +46,6 @@ export default function About() {
                 build.
               </p>
               <p>Based in Dubai. Built for international ambition.</p>
-            </div>
-          </div>
-        </Container>
-      </section>
-      <section className="founder section-pad">
-        <Container>
-          <SectionHeading
-            index="THE FOUNDER"
-            label="EXPERIENCE BEHIND THE PERSPECTIVE"
-          />
-          <div className="founder-grid">
-            <div className="founder-visual">
-              <Expansion />
-              <span>STRATEGY / PRODUCT / EXECUTION</span>
-            </div>
-            <div className="founder-bio">
-              <h2>Vida</h2>
-              <span className="eyebrow">
-                FOUNDER & DIGITAL TRANSFORMATION ADVISOR
-              </span>
-              <p>
-                Vida is a digital product and transformation leader with more
-                than a decade of experience building and managing digital
-                products, multidisciplinary teams and complex delivery
-                organisations.
-              </p>
-              <p>
-                Her experience spans product strategy, programme delivery, UX
-                and customer experience, quality assurance, technology delivery,
-                digital operations and organisational transformation.
-              </p>
-              <p>
-                Before founding BLUMEA, she held senior leadership roles
-                overseeing digital product and delivery functions, working with
-                executive teams to translate strategic priorities into shipped
-                products and measurable business outcomes.
-              </p>
-              <p>
-                She founded BLUMEA to combine senior advisory work with venture
-                building, applying the same execution discipline to client
-                organisations and products built internally.
-              </p>
             </div>
           </div>
         </Container>

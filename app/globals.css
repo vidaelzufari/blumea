@@ -1423,44 +1423,6 @@ div[id='philosophy'] {
 .studio-grid p {
   font-size: 18px;
 }
-.founder-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9%;
-}
-.founder-visual {
-  min-height: 500px;
-  background: #e5e2db;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-.founder-visual > .expansion {
-  width: 80%;
-  aspect-ratio: 1;
-}
-.founder-visual > span {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  font-size: 10px;
-  letter-spacing: 0.07em;
-}
-.founder-bio h2 {
-  font-size: 80px;
-  margin-bottom: 16px;
-}
-.founder-bio > .eyebrow {
-  display: block;
-  margin-bottom: 38px;
-  color: var(--accent);
-}
-.founder-bio p {
-  font-size: 17px;
-  color: var(--muted);
-}
 .quote-section {
   background: var(--ink);
   color: var(--paper);
@@ -1739,9 +1701,6 @@ div[id='philosophy'] {
   }
   .plate {
     width: 55px;
-  }
-  .founder-grid {
-    gap: 5%;
   }
   .contact-hero {
     gap: 6%;
@@ -2315,25 +2274,6 @@ div[id='philosophy'] {
     font-size: 12vw;
   }
   .studio-grid p {
-    font-size: 17px;
-  }
-  .founder-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .founder-visual {
-    min-height: 0;
-    aspect-ratio: 1.05;
-  }
-  .founder-bio h2 {
-    font-size: 70px;
-  }
-  .founder-bio > .eyebrow {
-    font-size: 10px;
-    line-height: 1.6;
-    margin-bottom: 27px;
-  }
-  .founder-bio p {
     font-size: 17px;
   }
   .quote-section {
