@@ -3,7 +3,7 @@ export const site = {
   brand: 'BLUMEA',
   email: 'hello@blumea.com',
   location: 'Dubai, United Arab Emirates',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://blumea.com',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://blumeaconsulting.com',
   description:
     'Blumea is a Dubai-based digital strategy, product and transformation company helping organisations move from ambition to execution through advisory, fractional leadership and venture building.',
   navigation: [
