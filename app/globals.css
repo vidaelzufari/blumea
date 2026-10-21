@@ -1692,9 +1692,6 @@ div[id='philosophy'] {
   .leadership-layout {
     gap: 6%;
   }
-  .venture-heading > span:last-child {
-    display: none;
-  }
   .meal-tile {
     padding: 8px;
     gap: 8px;
@@ -1899,7 +1896,6 @@ div[id='philosophy'] {
   .service-arrow {
     grid-column: 3;
     grid-row: 1;
-    font-size: 25px;
   }
   .execution-heading {
     display: block;
