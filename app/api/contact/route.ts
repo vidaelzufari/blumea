@@ -65,21 +65,9 @@ export async function POST(request: Request) {
     );
   const reference = crypto.randomUUID();
   const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    // Structured JSON prevents log injection. Logs contain enquiry data: restrict
-    // access and retention, and connect Resend before relying on email delivery.
-    const { website: _honeypot, ...enquiry } = data;
-    console.info(
-      JSON.stringify({
-        event: 'blumea.contact.received',
-        reference,
-        receivedAt: new Date().toISOString(),
-        enquiry,
-      }),
-    );
-    return Response.json({ ok: true, reference });
-  }
-  if (!process.env.RESEND_FROM_EMAIL) {
+  const fromEmail = process.env.RESEND_FROM_EMAIL;
+  const toEmail = process.env.CONTACT_TO_EMAIL;
+  if (!apiKey || !fromEmail || !toEmail) {
     console.error(
       JSON.stringify({
         event: 'blumea.contact.configuration_error',
@@ -89,7 +77,7 @@ export async function POST(request: Request) {
     return Response.json(
       {
         error:
-          'The enquiry service is temporarily unavailable. Please email us directly.',
+          'The enquiry service is temporarily unavailable. Please try again later.',
       },
       { status: 503 },
     );
@@ -103,8 +91,8 @@ export async function POST(request: Request) {
       },
       signal: AbortSignal.timeout(10000),
       body: JSON.stringify({
-        from: process.env.RESEND_FROM_EMAIL,
-        to: [process.env.CONTACT_TO_EMAIL || site.email],
+        from: fromEmail,
+        to: [toEmail],
         reply_to: data.email,
         subject: `BLUMEA enquiry: ${data.topic}`,
         text: `Reference: ${reference}\nName: ${data.name}\nCompany: ${data.company}\nRole: ${data.role}\nEmail: ${data.email}\nPhone: ${data.phone || 'Not provided'}\nTopic: ${data.topic}\n\n${data.message}`,
@@ -119,7 +107,7 @@ export async function POST(request: Request) {
     return Response.json(
       {
         error:
-          'We couldn’t deliver your enquiry. Please try again or email us directly.',
+          'We couldn’t deliver your enquiry. Please try again later.',
       },
       { status: 502 },
     );

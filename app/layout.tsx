@@ -5,6 +5,7 @@ import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { site } from '@/data/site';
 import { pageMetadata } from '@/lib/metadata';
+import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   ...pageMetadata(
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Navigation />
         {children}
         <Footer />
+        <GoogleAnalytics />
       </body>
     </html>
   );

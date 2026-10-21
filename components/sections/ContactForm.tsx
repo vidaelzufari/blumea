@@ -7,7 +7,7 @@ import {
   SelectContent,
   SelectItem,
 } from '@/components/ui/select';
-import { topics, site } from '@/data/site';
+import { topics } from '@/data/site';
 import { validateContact, type ContactErrors } from '@/lib/contact';
 export function ContactForm() {
   const [topic, setTopic] = useState<string | null>(null);
@@ -202,13 +202,11 @@ export function ContactForm() {
         <span aria-hidden="true">↗</span>
       </button>
       <p className="form-note">
-        We use these details to respond to your enquiry. Prefer email?{' '}
-        <a href={`mailto:${site.email}`}>{site.email}</a>
+        We use these details only to respond to your enquiry.
       </p>
       {status === 'error' && (
         <p className="form-error" role="alert">
-          {notice} You can also{' '}
-          <a href={`mailto:${site.email}`}>email us directly</a>.
+          {notice}
         </p>
       )}
     </form>

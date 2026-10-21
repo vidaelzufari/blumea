@@ -1,7 +1,6 @@
 export const site = {
   company: 'BLUMEA LLC',
   brand: 'BLUMEA',
-  email: 'hello@blumea.com',
   location: 'Dubai, United Arab Emirates',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://blumeaconsulting.com',
   description:

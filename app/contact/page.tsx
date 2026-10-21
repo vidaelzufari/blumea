@@ -27,7 +27,6 @@ export default function Contact() {
           happy to start a conversation.
         </p>
         <div className="contact-details">
-          <a href={`mailto:${site.email}`}>{site.email} ↗</a>
           <p>{site.location}</p>
         </div>
       </div>

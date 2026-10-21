@@ -20,7 +20,7 @@ export function Footer() {
           ))}
         </nav>
         <div className="footer-address">
-          <a href={`mailto:${site.email}`}>{site.email} ↗</a>
+          <Link href="/contact">CONTACT US ↗</Link>
           <p>
             Dubai
             <br />

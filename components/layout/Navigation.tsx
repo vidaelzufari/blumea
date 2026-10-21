@@ -60,7 +60,9 @@ export function Navigation() {
             ))}
           </nav>
           <div className="menu-footer">
-            <a href={`mailto:${site.email}`}>{site.email}</a>
+            <Link href="/contact" onClick={() => setOpen(false)}>
+              CONTACT US
+            </Link>
             <span>DUBAI / UNITED ARAB EMIRATES</span>
           </div>
         </SheetContent>
