@@ -72,7 +72,9 @@ export function ServiceList() {
           <h3>{s.title}</h3>
           <p>{s.description}</p>
           <span className="service-arrow" aria-hidden="true">
-            ↗
+            <svg viewBox="0 0 32 32" focusable="false">
+              <path d="M5 27 27 5M10 5h17v17" />
+            </svg>
           </span>
         </Link>
       ))}
