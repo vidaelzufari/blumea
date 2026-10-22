@@ -20,7 +20,7 @@ export function Footer() {
           ))}
         </nav>
         <div className="footer-address">
-          <Link href="/contact">CONTACT US ↗</Link>
+          <Link href="/contact">CONTACT US ↗︎</Link>
           <p>
             Dubai
             <br />
@@ -42,11 +42,11 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {label} ↗
+                {label} ↗︎
               </a>
             ))}
         </span>
-        <a href="#main">BACK TO TOP ↑</a>
+        <a href="#main">BACK TO TOP ↑︎</a>
       </div>
     </footer>
   );

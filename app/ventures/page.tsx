@@ -46,7 +46,7 @@ export default function Ventures() {
               <li key={step}>
                 <span>0{i + 1}</span>
                 {step}
-                <span aria-hidden="true">↗</span>
+                <span aria-hidden="true">↗︎</span>
               </li>
             ))}
           </ol>
@@ -55,7 +55,7 @@ export default function Ventures() {
             disciplined execution. Connected from idea to functioning business.
           </p>
           <div className="more-to-come">
-            More to come<span>↗</span>
+            More to come<span>↗︎</span>
           </div>
         </Container>
       </section>

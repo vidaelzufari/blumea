@@ -61,7 +61,7 @@ export function ContactForm() {
     return (
       <output className="form-success" tabIndex={-1} ref={successRef}>
         <span className="success-arrow" aria-hidden="true">
-          ↗
+          ↗︎
         </span>
         <h2>
           A good place
@@ -80,7 +80,7 @@ export function ContactForm() {
             setNotice('');
           }}
         >
-          START ANOTHER CONVERSATION ↗
+          START ANOTHER CONVERSATION ↗︎
         </button>
       </output>
     );
@@ -199,7 +199,7 @@ export function ContactForm() {
         disabled={status === 'sending'}
       >
         {status === 'sending' ? 'SENDING…' : 'START THE CONVERSATION'}
-        <span aria-hidden="true">↗</span>
+        <span aria-hidden="true">↗︎</span>
       </button>
       <p className="form-note">
         We use these details only to respond to your enquiry.

@@ -18,7 +18,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-meta">
           <span>DIGITAL STRATEGY. PRODUCTS. VENTURES.</span>
-          <span>DUBAI, UAE ↗</span>
+          <span>DUBAI, UAE ↗︎</span>
         </div>
         <h1>
           <AnimatedText>FROM DIGITAL</AnimatedText>
@@ -36,7 +36,7 @@ export default function Home() {
           </p>
           <MagneticButton href="/contact">START A CONVERSATION</MagneticButton>
           <a href="#perspective" className="scroll-link">
-            SCROLL TO EXPLORE ↓
+            SCROLL TO EXPLORE ↓︎
           </a>
         </div>
       </section>

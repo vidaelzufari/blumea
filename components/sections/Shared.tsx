@@ -24,7 +24,7 @@ export function SectionHeading({
       <span>
         {index} / {label}
       </span>
-      <span aria-hidden="true">↘</span>
+      <span aria-hidden="true">↘︎</span>
     </div>
   );
 }
@@ -72,9 +72,7 @@ export function ServiceList() {
           <h3>{s.title}</h3>
           <p>{s.description}</p>
           <span className="service-arrow" aria-hidden="true">
-            <svg viewBox="0 0 32 32" focusable="false">
-              <path d="M5 27 27 5M10 5h17v17" />
-            </svg>
+            ↗︎
           </span>
         </Link>
       ))}
@@ -105,7 +103,7 @@ export function ExecutionModel() {
               <span className="process-number">0{i + 1}</span>
               <h3>
                 {title}
-                <span aria-hidden="true">↗</span>
+                <span aria-hidden="true">↗︎</span>
               </h3>
               <p>{copy}</p>
             </li>
@@ -195,7 +193,7 @@ export function VentureVisual({ id }: { id: string }) {
           </div>
         </div>
         <div className="mock-bottom">
-          A plan that makes space for you. <span>↗</span>
+          A plan that makes space for you. <span>↗︎</span>
         </div>
       </div>
       <span className="art-caption">CONCEPT DIRECTION / FAMILY TECH</span>
@@ -230,7 +228,7 @@ export function VentureShowcase({ detailed = false }: { detailed?: boolean }) {
             <span className="eyebrow">
               0{i + 1} / {v.category.toUpperCase()}
             </span>
-            <span>BLUMEA VENTURES ↗</span>
+            <span>BLUMEA VENTURES ↗︎</span>
           </div>
           {detailed ? (
             <VentureVisual id={v.id} />
@@ -241,7 +239,7 @@ export function VentureShowcase({ detailed = false }: { detailed?: boolean }) {
               aria-label={`Explore ${v.name}`}
             >
               <VentureVisual id={v.id} />
-              <span className="view-project">EXPLORE ↗</span>
+              <span className="view-project">EXPLORE ↗︎</span>
             </Link>
           )}
           <div className="venture-copy">

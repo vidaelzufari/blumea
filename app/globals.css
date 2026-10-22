@@ -534,19 +534,9 @@ div[id='philosophy'] {
   padding-top: 7px;
 }
 .service-arrow {
-  display: flex;
-  justify-content: flex-end;
+  font-size: 32px;
   text-align: right;
   transition: transform 0.3s;
-}
-.service-arrow svg {
-  width: 32px;
-  height: 32px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: square;
-  stroke-linejoin: miter;
 }
 .service-row:hover,
 .service-row:focus-visible {

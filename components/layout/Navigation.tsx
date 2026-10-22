@@ -31,7 +31,7 @@ export function Navigation() {
         ))}
       </nav>
       <Link className="nav-contact" href="/contact">
-        LET’S TALK <span aria-hidden="true">↗</span>
+        LET’S TALK <span aria-hidden="true">↗︎</span>
       </Link>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger className="menu-trigger">
@@ -55,7 +55,7 @@ export function Navigation() {
               >
                 <small>0{i + 1}</small>
                 {item.label}
-                <span aria-hidden="true">↗</span>
+                <span aria-hidden="true">↗︎</span>
               </Link>
             ))}
           </nav>

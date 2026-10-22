@@ -30,7 +30,7 @@ export function MagneticButton({
       }}
     >
       {children}
-      <span aria-hidden="true">↗</span>
+      <span aria-hidden="true">↗︎</span>
     </Link>
   );
 }
