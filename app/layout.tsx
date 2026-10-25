@@ -12,6 +12,31 @@ export const metadata: Metadata = {
     'Blumea | Digital Strategy, Product & Transformation',
     site.description,
   ),
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
+};
+
+const organisationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: site.brand,
+  legalName: site.company,
+  url: site.url,
+  description: site.description,
+  areaServed: 'Worldwide',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Dubai',
+    addressCountry: 'AE',
+  },
+  knowsAbout: [
+    'Digital transformation',
+    'Product strategy',
+    'Digital delivery',
+    'Fractional digital leadership',
+    'Venture building',
+  ],
 };
 export default function RootLayout({
   children,
@@ -21,6 +46,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organisationSchema) }}
+        />
         <a className="skip-link" href="#main">
           Skip to content
         </a>
