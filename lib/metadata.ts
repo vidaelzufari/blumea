@@ -8,6 +8,14 @@ export function pageMetadata(
   return {
     title,
     description,
+    keywords: [
+      'digital transformation consultancy Dubai',
+      'digital strategy Dubai',
+      'product strategy consultancy',
+      'fractional digital leadership',
+      'digital delivery advisory',
+      'venture building Dubai',
+    ],
     alternates: { canonical: site.url + path },
     openGraph: {
       title,
